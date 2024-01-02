@@ -1,10 +1,12 @@
 :root {
     --primary-color: #111f2c;
     --secundary-color: #42677d;
+    --bottom-text-color: #86a4b4;
+    --font-stack: 'Alegreya Sans', system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
-    font-family: 'Alegreya Sans', system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-stack)
 }
 
 body {
@@ -18,17 +20,22 @@ body {
 }
 
 .img-container {
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
     position: relative;
 }
 
 .logo-background {
-    display: flex;
     position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     z-index: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: min(237.3px, 38%);
 }
 
 img {
@@ -37,11 +44,29 @@ img {
 }
 
 .logo {
-    width: 20%;
-    height: 20%;
+    width: min(9vw, 114px);
+    height: min(8vw, 109px);
+}
+
+.ODIN {
+    font-weight: 100;
+    font-size: min(6rem, 6vw);
+    color: var(--primary-color);
+}
+
+.img-author {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: var(--bottom-text-color, #657581);
+    text-align: center;
+    font-size: max(0.5rem, 1vw);;
 }
 
 .form-container {
-    width: 60%;
+    width: 65%;
     height: 100%;
+    box-sizing: border-box;
+    padding: 4vw;
 }
+
