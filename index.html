@@ -28,31 +28,31 @@
                         <div class="pair-form-container">
                             <div class="first-name form-control">
                                 <label for="fname">First Name</label>
-                                <input type="text" name="first-name" id="fname" required>
+                                <input type="text" name="first-name" id="fname" minlength="2" placeholder="John" autocomplete="off" required>
                             </div>
                             <div class="last-name form-control">
                                 <label for="lname">Last Name</label>
-                                <input type="text" name="last-name" id="lname" required>
+                                <input type="text" name="last-name" id="lname" minlength="2" placeholder="Doe" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="pair-form-container">
                             <div class="email form-control">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" id="email" required>
+                                <input type="email" name="email" id="email" minlength="5" placeholder="example@email.com" autocomplete="off" required>
                             </div>
                             <div class="phone form-control">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" name="phone" id="phone" required>
+                                <input type="tel" name="phone" id="phone" minlength="5" placeholder="+58 1234567890" autocomplete="off" required>
                             </div>
                         </div>
                         <div class="pair-form-container">
                             <div class="pass form-control">
                                 <label for="pass">Password</label>
-                                <input type="password" id="pass" name="password" required>
+                                <input class="error" type="password" id="pass" name="password" minlength="8" required>
                             </div>
                             <div class="pass-confirm form-control">
                                 <label for="pass-confirm">Confirm Password</label>
-                                <input type="password" id="pass-confirm" name="pass-confirm" required>
+                                <input class="error" type="password" id="pass-confirm" name="pass-confirm" minlength="8" required>
                             </div>
                         </div>
                     </fieldset>
