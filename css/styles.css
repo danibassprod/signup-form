@@ -36,6 +36,21 @@ em {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-left: -6px;
+    font-size: max(5px, 1.2vw);;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: var(--secundary-color);
+}
 
 img {
     width: 100%;
@@ -85,6 +100,7 @@ input {
 
 input:focus,
 input:focus-visible {
+    transition: 50ms;
     appearance: none;
     outline: 1px solid var(--input-outline-color, #8caebd);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.369);
@@ -97,18 +113,31 @@ input::placeholder {
 }
 
 input:user-invalid {
+    transition: 50ms;
     outline: 1px solid red;
 }
 
+
 button {
     font-size: max(5px, 1.2vw);
-    position: absolute;
-    margin: 2vw 0 0 4vw;
+    /* position: absolute; */
     padding: max(0.5px, 0.7vw) max(5px, 2.6vw);
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
     color: var(--background-color);
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 41%);
+}
+
+button:hover {
+    filter: brightness(95%);
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 41%);
+}
+
+button:active {
+    filter: brightness(85%);
+    outline: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 41%);
 }
 
 .container {
@@ -182,4 +211,20 @@ button {
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.3);
     height: min(237.3px, 38%);
+}
+
+.button-container {
+    position: absolute;
+    display: flex;
+    gap: max(10px, 0.5vw);
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0 0 4vw;
+}
+
+.login {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: max(5px, 1.2vw);
+    letter-spacing: 0.2px;
 }
