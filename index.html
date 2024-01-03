@@ -16,46 +16,49 @@
                 <img class="logo" src="img/odin-lined.png" alt="Odin Logo">
                 <p class="ODIN">ODIN</p>
             </div>
-            <p class="img-author">Image by Rakicevic Nenad</p>
+            <p class="img-author">Photo by Rakicevic Nenad</p>
         </div>  
         <div class="form-container">
-            <h1>This is not a real online service! You know you need something liek this in your life to help you realize your deepest dreams.</h1>
-            <p>You <em>know</em>you want to.</p>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <div class="first-name form-control">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="first-name" id="fname">
-                    </div>
-
-                    <div class="last-name form-control">
-                        <label for="lname">Last Name</label>
-                        <input type="text" name="last-name" id="lname">
-                    </div>
-
-                    <div class="email form-control">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-
-                    <div class="phone form-control">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-
-                    <div class="pass form-control">
-                        <label for="pass">Password</label>
-                        <input type="password" id="pass" name="password">
-                    </div>
-
-                    <div class="pass-confirm form-control">
-                        <label for="pass-confirm">Confirm Password</label>
-                        <input type="password" id="pass-confirm" name="pass-confirm">
-                    </div>
-                    
-                </fieldset>
-            </form>
+            <div class="form-wrapper">
+                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h1>
+                <p class="phrase">You <em>know</em> you want to.</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <div class="pair-form-container">
+                            <div class="first-name form-control">
+                                <label for="fname">First Name</label>
+                                <input type="text" name="first-name" id="fname" required>
+                            </div>
+                            <div class="last-name form-control">
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="last-name" id="lname" required>
+                            </div>
+                        </div>
+                        <div class="pair-form-container">
+                            <div class="email form-control">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="phone form-control">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="pair-form-container">
+                            <div class="pass form-control">
+                                <label for="pass">Password</label>
+                                <input type="password" id="pass" name="password" required>
+                            </div>
+                            <div class="pass-confirm form-control">
+                                <label for="pass-confirm">Confirm Password</label>
+                                <input type="password" id="pass-confirm" name="pass-confirm" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
